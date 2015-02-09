@@ -8,6 +8,7 @@
 - 存在跨域问题，所以需要在服务器环境预览查看DEMO
 - 只支持canvas高级浏览器，一般用于后台录入
 - 对阵图单元格边框和背景需要规定颜色，对阵图背景可随意设计
+
         <div class="container"></div>
         <script>
         $(document).ready(function(){
