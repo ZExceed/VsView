@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>DEMO</title>
+    <meta name="renderer" content="webkit">
+    <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../jquery.VsView.js"></script>
+</head>
+<body>
+<div class="container"></div>
+<script>
+$(document).ready(function(){
+    $('.container').VsView({
+        borderColor: '000000',
+        image: 'bracket.png'
+    }).active(function(position, rect){
+        $(rect).html('TeamName');
+        console.log(position);
+    });
+});
+</script>
+</body>
+</html>
