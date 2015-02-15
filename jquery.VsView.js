@@ -36,6 +36,8 @@
         img.onload = function() {
             _self.load(img);
         };
+
+        img.crossOrigin = ''; // Access-Control-Allow-Origin *
         img.src = this.options.image;
     };
 
